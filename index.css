@@ -1,0 +1,14 @@
+.navbar{
+    padding:0px;
+    
+}
+.Profpic{
+    padding: 5px;
+    margin: 10px;
+}
+.Home{
+    border-radius: 10px;
+}
+.Home div:hover{
+   cursor: pointer;
+}
