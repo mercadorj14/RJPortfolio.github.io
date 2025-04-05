@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./index.css" />
   </head>
-  <body class="bg-info">
+  <body class="bg-info" data-bs-spy="scroll" data-bs-target=".navbar">
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -20,249 +20,378 @@
     ></script>
 
     <!-- navbar section -->
-    <nav class="navbar navbar-expand-lg bg-info-subtle justify-content-center">
-    <!--<div class="navbar justify-content-center bg-info-subtle">-->
-      <img src="tripleslogo.png" class="Profpic rounded-circle" alt="..." width="120px" height="120px"/>
-      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active"
-            id="pills-home-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-home"
-            type="button"
-            role="tab"
-            aria-controls="pills-home"
-            aria-selected="true"
-          >
-            Profile
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="pills-Projects-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-Projects"
-            type="button"
-            role="tab"
-            aria-controls="pills-Projects"
-            aria-selected="false"
-          >
-            Projects
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="pills-JobExperience-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-JobExperience"
-            type="button"
-            role="tab"
-            aria-controls="pills-JobExperience"
-            aria-selected="false"
-          >
-            Job Experience
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="pills-contact-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-contact"
-            type="button"
-            role="tab"
-            aria-controls="pills-contact"
-            aria-selected="false"
-          >
-            Contact
-          </button>
-        </li>
-      </ul>
-   <!-- </div> -->
-  </nav>
-    <!-- HOME -->
-      <div class="tab-content p-4 lg" id="pills-tabContent">
-        <div
-          class="tab-pane fade show active"
-          id="pills-home"
-          role="tabpanel"
-          aria-labelledby="pills-home-tab"
-          tabindex="0">
-            <div class="Home p-3 mb-2 bg-info-subtle shadow">
-              <p>Hello, and welcome to my portfolio! My name is Ralph Joshua L. Mercado, and I am currently working as an Operations Analyst. Studying web development as a past time that someday will transform into professional developer. My approach is rooted in collaboration, creativity, and attention to detail, always striving to deliver high-quality results that align with both client needs and project goals.
-              </p>
-              <p>In this portfolio, you will find a selection of my work that reflects my dedication to excellence and my commitment to continuous learning. I look forward to sharing my journey with you and exploring new opportunities to create impactful work together.
-              </p>
-              <p>Feel free to connect with me if you’d like to discuss a project or just want to say hello!</p>
-            </div>
-          </div>
-    <!-- PROJECT -->
-        <div class="tab-pane fade bg-info-subtle p-4 rounded-4 lg" id="pills-Projects"
-          role="tabpanel"
-          aria-labelledby="pills-Projects-tab"
-          tabindex="0"
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">Joshua</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-        <h1 class="text-center fw-normal">MY PAST PROJECTS</h1>
-        <div class="row">
-          <div class="col">
-          <div class="PFMBAI card shadow">
-          <img src="PFMBAI.JPG" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Praxis Fides MBAI</h5>
-            <p class="card-text">I've developed this website in the year 2021 using Wix. Wix offers tools for creating HTML5 websites for desktop and mobile platforms using online drag-and-drop editing.</p>
-            <a href="https://www.praxisfides.com/" target="_blank" class="btn btn-primary">Visit</a>
-          </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="PFMBAI card shadow">
-            <img src="PFMBAI.JPG" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">My Portfolio</h5>
-              <p class="card-text">I've developed this website in the year 2021 using Wix. Wix offers tools for creating HTML5 websites for desktop and mobile platforms using online drag-and-drop editing.</p>
-              <a href="https://www.praxisfides.com/" target="_blank" class="btn btn-primary">Visit</a>
-            </div>
-            </div>
-            </div>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul
+            class="nav nav-pills lg mb-3 justify-content-center"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                Home
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-Projects-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-Projects"
+                type="button"
+                role="tab"
+                aria-controls="pills-Projects"
+                aria-selected="false"
+              >
+                Projects
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-JobExperience-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-JobExperience"
+                type="button"
+                role="tab"
+                aria-controls="pills-JobExperience"
+                aria-selected="false"
+              >
+                Job Experience
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Contact
+              </button>
+            </li>
+          </ul>
         </div>
-        </div>
-        <!-- JOB EXP-->
-        <div
-          class="tab-pane fade bg-info-subtle p-4 rounded-4 lg"
-          id="pills-JobExperience"
-          role="tabpanel"
-          aria-labelledby="pills-JobExperience-tab"
-          tabindex="0"
-        >
-          <h1 class="text-center fw-normal">JOB EXPERIENCE</h1>
-            <div class="row">
-              <p><h5 class="text-primary-emphasis text-center">Company: Mind Dragon Philippines OPC</h5></p>
-              <div class="col p-4 lg shadow rounded-4">
-                <p><h5 class="text-primary-emphasis">Position: Operations Analyst – Asset Protection Technology Coordinator (May 2023 – Present)</h5></p>
-                <ul class="lg text-start">
-                  <li>Direct Support from Asset Protection Manager(on site).
-                    <ul>
-                        <li>Monitor’s health of security systems(Alarm system, access control, camera system) of
-                          over 1,600 stores.</li>
-                        <li>Escalate emergency ticket to the vendors.</li>
-                        <li>Project Support
-                          (Assisting in various projects related to asset protection. This might involve planning,
-                          coordination, and execution of projects aimed at enhancing security and protection
-                          measures.)
-                          </li>
-                    </ul>
-                  </li>
-                  <li> Supports on site request(Store employees & leaderships).
-                    <ul>
-                        <li>Conduct investigation on the field employees’ concerns.</li>
-                        <li>Escalate emergency ticket (ServiceNow) to the vendors.</li>
-                    </ul>
-                  </li>
-                  <li>Email & Teams Chat Support.</li>
-                  <li>Other requests
-                    (Include tasks not explicitly mentioned in the list but are relevant to the role.)</li>
-                  </li>
-                </ul>
-              </div>
-              <div class="col p-4 lg shadow rounded-4 ms-2">
-                <p><h5 class="text-primary-emphasis">Position: Associate Operations Analyst, Alarms Support Team (June 2022 – April 2023)</h5></p>
-                <ul class="lg text-start">
-                  <li>24/7 call support
-                    <ul>
-                        <li>Investigating, video downloading, and creating synopsis for Break-in, Shoplift, Unsecured stores.
-                        </li>
-                        <li>Employees concern(ex:access to store/safe, safe lockouts, etc.)</li>
-                    </ul>
-                  </li>
-                  <li> Supports on site request(Store employees & leaderships).
-                    <ul>
-                        <li>Alarm code, Safe code.</li>
-                        <li>Video Request(time fraud, shoplift).</li>
-                        <li>Ticket Support(using JIRA, OfficeTrack Ticket)</li>
-                    </ul>
-                  </li>
-                  <li>Email & Teams Chat Support.</li>
-                  <li>Other requests
-                    (Include tasks not explicitly mentioned in the list but are relevant to the role.)</li>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="row mt-3">
-              <div class="col p-4 lg shadow rounded-4">
-                <p><h5 class="text-primary-emphasis">Company: Praxis Fides Mutual Benefit Association, Inc.</h5></p>
-                <p><h5 class="text-primary-emphasis">Position: Staff(MC/MIS Department), July 2018 – November 2021</h5></p>
-                <ul class="lg text-start">
-                  <li>Main tasks
-                    <ul>
-                        <li>Encoder</li>
-                        <li>File and Scan documents</li>
-                        <li>Process withdrawals and death claims of members and beneficiaries.</li>
-                        <li>Inventory</li>
-                        <li>Inquiries from members/clients and area coordinators</li>
-                    </ul>
-                  </li>
-                  <li> Special Tasks
-                    <ul>
-                        <li>MIS–2nd Liner</li>
-                        <li>Website Admin</li>
-                        <li>Graphic Designer</li>
-                        <li>Troubleshooting</li>
-                        <li>Property Custodian</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="col p-4 lg shadow rounded-4 ms-2">
-                <p><h5 class="text-primary-emphasis">Company: Indra Sistemas S.A.</h5></p>
-                <p><h5 class="text-primary-emphasis">Position: Application Support(Project Hire), March 2018 – June 2018</h5></p>
-                <ul class="lg text-start">
-                  <li>Tasks
-                    <ul>
-                        <li>Perform a health check of the application process.</li>
-                        <li>Perform health check of all interfaces (external and internal).</li>
-                        <li>Perform Start/Stop of the applications of the interfaces.</li>
-                        <li>Perform testing in the development system for any bug/fixes/updates/ code changes performed
-                          by L3 Vendor, before deployment into production.</li>
-                        <li>Perform testing in development systems for configuration changes before change in production.</li>
-                        <li>Perform testing of end services after any bug fixes and updates implementation.</li>
-                        <li>Perform corrective and preventive maintenance activities.</li>
-                        <li>System/application restoration in case of any incident.</li>
-                        <li>Work and followup with L3 Vendor any unresolved, escalated issues.</li>
-                        <li>Perform planned maintenance activities.</li>
-                        <li>Handling activities escalated from L1 24x7 onsite Support.</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </div>
-        <!-- CONTACT -->
-        <div
-          class="tab-pane fade bg-info-subtle p-4 rounded-4 lg"
-          id="pills-contact"
-          role="tabpanel"
-          aria-labelledby="pills-contact-tab"
-          tabindex="0"
-        >
-        <!-- FORM -->
-        <form action="https://formspree.io/f/movekpnw" method="POST">
-        <label>
-          Your email:
-          <input type="email" name="email">
-        </label>
-        <label>
-          Your message:
-          <textarea name="message"></textarea>
-        </label>
-        <!-- your other form fields go here -->
-        <button type="submit">Send</button>
-      </form>
+      </div>
+    </nav>
+    <!-- Content Wrapper-->
+    <div class="tab-content">
+      <!-- HOME -->
+      <div
+        class="tab-pane fade show active"
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+        tabindex="0"
+      >
+        <div class="bg-info-subtle p-3 rounded-4">
+          <p>
+            Hello, and welcome to my portfolio! My name is Ralph Joshua L.
+            Mercado, and I am currently working as an Operations Analyst.
+            Studying web development as a past time that someday will transform
+            into professional developer. My approach is rooted in collaboration,
+            creativity, and attention to detail, always striving to deliver
+            high-quality results that align with both client needs and project
+            goals.
+          </p>
+          <p>
+            In this portfolio, you will find a selection of my work that
+            reflects my dedication to excellence and my commitment to continuous
+            learning. I look forward to sharing my journey with you and
+            exploring new opportunities to create impactful work together.
+          </p>
+          <p>
+            Feel free to connect with me if you’d like to discuss a project or
+            just want to say hello!
+          </p>
         </div>
       </div>
 
+      <!-- PROJECT -->
+
+      <div
+        class="tab-pane fade bg-info-subtle p-4 rounded-4 lg"
+        id="pills-Projects"
+        role="tabpanel"
+        aria-labelledby="pills-Projects-tab"
+        tabindex="0"
+      >
+        <div class="bg-info-subtle p-3 rounded-4">
+          <h1 class="text-center fw-normal">MY PAST PROJECTS</h1>
+          <div class="row">
+            <div class="col">
+              <div class="PFMBAI card shadow">
+                <img src="PFMBAI.JPG" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Praxis Fides MBAI</h5>
+                  <p class="card-text">
+                    I've developed this website in the year 2021 using Wix. Wix
+                    offers tools for creating HTML5 websites for desktop and
+                    mobile platforms using online drag-and-drop editing.
+                  </p>
+                  <a
+                    href="https://www.praxisfides.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="PFMBAI card shadow">
+                <img src="PFMBAI.JPG" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">My Portfolio</h5>
+                  <p class="card-text">
+                    I've developed this website in the year 2021 using Wix. Wix
+                    offers tools for creating HTML5 websites for desktop and
+                    mobile platforms using online drag-and-drop editing.
+                  </p>
+                  <a
+                    href="https://www.praxisfides.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JOB EXP-->
+
+      <div
+        class="tab-pane fade bg-info-subtle p-4 rounded-4 lg"
+        id="pills-JobExperience"
+        role="tabpanel"
+        aria-labelledby="pills-JobExperience-tab"
+        tabindex="0"
+      >
+        <div class="bg-info-subtle p-3 rounded-4">
+          <h1 class="text-center fw-normal">JOB EXPERIENCE</h1>
+          <div class="row">
+            <h5 class="text-primary-emphasis text-center">
+              Company: Mind Dragon Philippines OPC
+            </h5>
+            <div class="col p-4 shadow rounded-4">
+              <h5 class="text-primary-emphasis">
+                Position: Operations Analyst – Asset Protection Technology
+                Coordinator (May 2023 – Present)
+              </h5>
+              <ul class="text-start">
+                <li>
+                  Direct Support from Asset Protection Manager(on site).
+                  <ul>
+                    <li>
+                      Monitor’s health of security systems(Alarm system, access
+                      control, camera system) of over 1,600 stores.
+                    </li>
+                    <li>Escalate emergency ticket to the vendors.</li>
+                    <li>
+                      Project Support (Assisting in various projects related to
+                      asset protection. This might involve planning,
+                      coordination, and execution of projects aimed at enhancing
+                      security and protection measures.)
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Supports on site request(Store employees & leaderships).
+                  <ul>
+                    <li>
+                      Conduct investigation on the field employees’ concerns.
+                    </li>
+                    <li>
+                      Escalate emergency ticket (ServiceNow) to the vendors.
+                    </li>
+                  </ul>
+                </li>
+                <li>Email & Teams Chat Support.</li>
+                <li>
+                  Other requests (Include tasks not explicitly mentioned in the
+                  list but are relevant to the role.)
+                </li>
+              </ul>
+            </div>
+            <div class="col p-4 shadow rounded-4">
+              <h5 class="text-primary-emphasis">
+                Position: Associate Operations Analyst, Alarms Support Team
+                (June 2022 – April 2023)
+              </h5>
+              <ul class="text-start">
+                <li>
+                  24/7 call support
+                  <ul>
+                    <li>
+                      Investigating, video downloading, and creating synopsis
+                      for Break-in, Shoplift, Unsecured stores.
+                    </li>
+                    <li>
+                      Employees concern(ex:access to store/safe, safe lockouts,
+                      etc.)
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Supports on site request(Store employees & leaderships).
+                  <ul>
+                    <li>Alarm code, Safe code.</li>
+                    <li>Video Request(time fraud, shoplift).</li>
+                    <li>Ticket Support(using JIRA, OfficeTrack Ticket)</li>
+                  </ul>
+                </li>
+                <li>Email & Teams Chat Support.</li>
+                <li>
+                  Other requests (Include tasks not explicitly mentioned in the
+                  list but are relevant to the role.)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col p-4 shadow rounded-4">
+              <h5 class="text-primary-emphasis">
+                Company: Praxis Fides Mutual Benefit Association, Inc.
+              </h5>
+              <h5 class="text-primary-emphasis">
+                Position: Staff(MC/MIS Department), July 2018 – November 2021
+              </h5>
+              <ul class="text-start">
+                <li>
+                  Main tasks
+                  <ul>
+                    <li>Encoder</li>
+                    <li>File and Scan documents</li>
+                    <li>
+                      Process withdrawals and death claims of members and
+                      beneficiaries.
+                    </li>
+                    <li>Inventory</li>
+                    <li>
+                      Inquiries from members/clients and area coordinators
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Special Tasks
+                  <ul>
+                    <li>MIS–2nd Liner</li>
+                    <li>Website Admin</li>
+                    <li>Graphic Designer</li>
+                    <li>Troubleshooting</li>
+                    <li>Property Custodian</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="col p-4 shadow rounded-4">
+              <h5 class="text-primary-emphasis">
+                Company: Indra Sistemas S.A.
+              </h5>
+              <h5 class="text-primary-emphasis">
+                Position: Application Support(Project Hire), March 2018 – June
+                2018
+              </h5>
+              <ul class="text-start">
+                <li>
+                  Tasks
+                  <ul>
+                    <li>Perform a health check of the application process.</li>
+                    <li>
+                      Perform health check of all interfaces (external and
+                      internal).
+                    </li>
+                    <li>
+                      Perform Start/Stop of the applications of the interfaces.
+                    </li>
+                    <li>
+                      Perform testing in the development system for any
+                      bug/fixes/updates/ code changes performed by L3 Vendor,
+                      before deployment into production.
+                    </li>
+                    <li>
+                      Perform testing in development systems for configuration
+                      changes before change in production.
+                    </li>
+                    <li>
+                      Perform testing of end services after any bug fixes and
+                      updates implementation.
+                    </li>
+                    <li>
+                      Perform corrective and preventive maintenance activities.
+                    </li>
+                    <li>
+                      System/application restoration in case of any incident.
+                    </li>
+                    <li>
+                      Work and followup with L3 Vendor any unresolved, escalated
+                      issues.
+                    </li>
+                    <li>Perform planned maintenance activities.</li>
+                    <li>
+                      Handling activities escalated from L1 24x7 onsite Support.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div
+        class="tab-pane fade bg-info-subtle p-4 rounded-4 lg"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+        tabindex="0"
+      >
+        <div class="bg-info-subtle p-3 rounded-4">
+          <!-- FORM -->
+          <form action="https://formspree.io/f/movekpnw" method="POST">
+            <label>
+              Your email:
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

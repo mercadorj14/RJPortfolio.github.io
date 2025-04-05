@@ -1,14 +1,12 @@
-.navbar{
-    padding:0px;
-    
+
+.midnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.Profpic{
-    padding: 5px;
-    margin: 10px;
-}
-.Home{
-    border-radius: 10px;
-}
-.Home div:hover{
-   cursor: pointer;
+@media screen and (max-width: 425px) {
+    .midnav{
+        justify-content: left;
+        
+    }
 }
