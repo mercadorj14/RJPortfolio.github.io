@@ -1,12 +1,49 @@
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color:darkblue;
+    font-size: large;
+    font-weight: bolder;
+  }
+  .nav-pills .nav-link {
+    color: #000;
+    background-color: transparent;
+  }
 
-.midnav{
+.projcontainer{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
 }
-@media screen and (max-width: 425px) {
+
+.formcontainer{
+    max-height: auto;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
     .midnav{
+        display: flex;
+        flex-direction: column;
         justify-content: left;
-        
+        align-items: left;
+    }
+    .formcontainer{
+        width: 500px;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .projcontainer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .formcontainer{
+        width: 360px;
+    }
+}
+
