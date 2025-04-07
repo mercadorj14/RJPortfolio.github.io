@@ -1,3 +1,10 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    justify-content: center; /* Vertically center */
+    align-items: center; /* Horizontally center */
+  }
+
 .nav-pills .nav-link.active {
     background-color: transparent;
     color:darkblue;
@@ -24,15 +31,55 @@
     justify-content: center;
 }
 
+.navbar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+.Main-content {
+    margin-left: 250px; /* Offset the content to the right of the sidebar */
+    padding: 20px;
+    height: 100%; /* Full viewport height */
+    overflow-y: auto; /* Allow scrolling if content exceeds the height */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+}
+.JOBEXPtab{
+    max-height: 95vh; /* Ensure the tab doesn't extend beyond the viewport height */
+}
+.ProfPic{
+    border: 10px solid cyan;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
 @media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
     .midnav{
         display: flex;
         flex-direction: column;
-        justify-content: left;
-        align-items: left;
+        justify-content: right;
+        align-items: right;
     }
     .formcontainer{
         width: 500px;
+    }
+    .Main-content{
+        margin-left: 0px;
+    }
+    .ProfPic{
+        display: none;
     }
 }
 
